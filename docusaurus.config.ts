@@ -9,6 +9,9 @@ const config: Config = {
   title: "Tiendify Docs",
   tagline: "Tiendify API documentation",
   favicon: "img/favicon.ico",
+  markdown: {
+    mermaid: true,
+  },
 
   // Set the production url of your site here
   url: "https://tiendify.com",
@@ -136,7 +139,7 @@ const config: Config = {
       darkTheme: prismThemes.dracula,
     },
   } satisfies Preset.ThemeConfig,
-  themes: ["docusaurus-theme-openapi-docs"],
+  themes: ["docusaurus-theme-openapi-docs", "@docusaurus/theme-mermaid"],
 };
 
 export default config;
