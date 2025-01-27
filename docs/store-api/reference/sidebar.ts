@@ -8,7 +8,7 @@ const sidebar: SidebarsConfig = {
     },
     {
       type: "category",
-      label: "auth",
+      label: "Auth",
       items: [
         {
           type: "doc",
@@ -38,7 +38,7 @@ const sidebar: SidebarsConfig = {
     },
     {
       type: "category",
-      label: "secret keys",
+      label: "Secret Keys",
       items: [
         {
           type: "doc",
@@ -56,7 +56,7 @@ const sidebar: SidebarsConfig = {
     },
     {
       type: "category",
-      label: "categories",
+      label: "Categories",
       items: [
         {
           type: "doc",
@@ -80,7 +80,7 @@ const sidebar: SidebarsConfig = {
     },
     {
       type: "category",
-      label: "products",
+      label: "Products",
       items: [
         {
           type: "doc",
@@ -128,7 +128,7 @@ const sidebar: SidebarsConfig = {
     },
     {
       type: "category",
-      label: "orders",
+      label: "Orders",
       items: [
         {
           type: "doc",
@@ -152,7 +152,7 @@ const sidebar: SidebarsConfig = {
     },
     {
       type: "category",
-      label: "customers",
+      label: "Customers",
       items: [
         {
           type: "doc",
@@ -164,7 +164,7 @@ const sidebar: SidebarsConfig = {
     },
     {
       type: "category",
-      label: "UNTAGGED",
+      label: "Other",
       items: [
         {
           type: "doc",
