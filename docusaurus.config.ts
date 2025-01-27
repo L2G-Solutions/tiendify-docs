@@ -43,6 +43,16 @@ const config: Config = {
           sidebarPath: "./sidebars.ts",
           docItemComponent: "@theme/ApiItem",
         },
+        blog: {
+          showReadingTime: true,
+          feedOptions: {
+            type: ["rss", "atom"],
+            xslt: true,
+          },
+          onInlineTags: "warn",
+          onInlineAuthors: "warn",
+          onUntruncatedBlogPosts: "warn",
+        },
         theme: {
           customCss: "./src/css/custom.css",
         },
@@ -97,6 +107,11 @@ const config: Config = {
           position: "left",
           label: "Documentation",
         },
+        {
+          label: "Blog",
+          to: "/blog",
+          position: "left",
+        },
       ],
     },
     footer: {
@@ -108,6 +123,10 @@ const config: Config = {
             {
               label: "API Reference",
               to: "/docs/store-api/reference",
+            },
+            {
+              label: "Blog",
+              to: "/blog",
             },
           ],
         },
