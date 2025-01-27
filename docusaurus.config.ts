@@ -144,7 +144,7 @@ const config: Config = {
           items: [
             {
               label: "Email",
-              to: "mailto:tiendify@gmail.com",
+              to: "mailto:l2gsolutions@outlook.com",
             },
           ],
         },
