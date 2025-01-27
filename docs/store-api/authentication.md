@@ -1,3 +1,7 @@
+---
+sidebar_position: 1
+---
+
 # Authentication
 
 Tiendify uses a centralized server for authentication, which is a session-cookie based system. This page describes the flow your website should follow in order to provide authentication for them.
