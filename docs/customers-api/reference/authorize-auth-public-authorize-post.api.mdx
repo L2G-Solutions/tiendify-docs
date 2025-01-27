@@ -1,0 +1,71 @@
+---
+id: authorize-auth-public-authorize-post
+title: "Takes the authorization code and set the access token"
+description: "Takes the authorization code and set the access token"
+sidebar_label: "Takes the authorization code and set the access token"
+hide_title: true
+hide_table_of_contents: true
+api: eJytVE1v2zAM/SsGz0KTBTv5FnQDVnRbiyXdpQgCRWZiNYrlUnRbL9B/H2g5X0g7bENPcSjy8fHxYwusVwHye9ANlzBT4GskzdZXVwXkndWT/YVz+ZrXzcJZMz9Yax8YFNSa9AYZSaC2UOkNQg7GFwgKbAU5PDZILSggfGwsYQH5UruACoIpcaMh3wK3tUQFJlutQAFbdmK4FJgY1R73STtbdBznDdl3yPBzD5jdkT3JVeELv0OG7wIT40yCQ+2rgEHcR8Oh/BQYDNlaCEAOk8YYDGHZuOxH7wwKjK8YKxZ3XdfOmo7v4CFIzPZAIcYYFXwcjc6Bj8r8TOTpH1ChJhkMtol3gaytky/LuAnnDs6bk1ddtTfLbjZOFRKle4utGFdIEGdR7WyaSLdHMn71iSBEBZuw+pPi3zAEvULYg73t2omRTeU1HnL7xQMaPmn3fVdXSt37zV6boqTu22V8SvK9lmzn8mU6vT0DTL09bepUrzFkXGK228rUYVm+TFdFFpDTczdVGfs1VlIDcullxfcrzCXkMBCUQdrzwX7PQUFA05DldiIjkZo8vr26xvbS+7U91lfX9hrb3dKY9Kx2C0W4JAzlPPGICiZoCDlbY5uNC7vJxg2XWHE/ike4XuiMQMHS+ec0czqEZ09FGlVfd7REVMG+Iwc59Gk64Wy19B1er/GEPQmzJ6SQxBxefLgYCikRZaO77D3v/9X5pFv7WhhfeFA7bTsJGnKpHGlBf4oVpCaAOhxhmbZS2pXfw3a70AHvyMUo5nSbZMEKG/TCHV2nNbaHY/ykXSMEus17w/Xsvv5NUH8oD64z+UNWfCG/l6UuURdIHckUMzYG6+OosxskKPtJvb2ZTCHG3xjoTHE=
+sidebar_class_name: "post api-method"
+info_path: docs/customers-api/reference/store
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Takes the authorization code and set the access token"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/auth/public/authorize"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Takes the authorization code and set the access token
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"code","in":"query","required":false,"schema":{"type":"string","title":"Code"}},{"name":"validation_uri","in":"query","required":false,"schema":{"type":"string","title":"Validation Uri"}},{"name":"next","in":"query","required":false,"schema":{"type":"string","title":"Next"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Successful Response","content":{"application/json":{"schema":{}}}},"422":{"description":"Validation Error","content":{"application/json":{"schema":{"properties":{"detail":{"items":{"properties":{"loc":{"items":{"anyOf":[{"type":"string"},{"type":"integer"}]},"type":"array","title":"Location"},"msg":{"type":"string","title":"Message"},"type":{"type":"string","title":"Error Type"}},"type":"object","required":["loc","msg","type"],"title":"ValidationError"},"type":"array","title":"Detail"}},"type":"object","title":"HTTPValidationError"}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

@@ -1,0 +1,71 @@
+---
+id: handle-get-order-orders-order-id-get
+title: "Handle Get Order"
+description: "Handle Get Order"
+sidebar_label: "Handle Get Order"
+hide_title: true
+hide_table_of_contents: true
+api: eJyVVEtv2zAM/isGTxsgNFmwk2/BVrRFN7Ro0l2CIFBsJlajWKpEtzMM/feBkp0H0h528UMkP376+OiA5NZDvgDjSnQelgKMRSdJmfquhBwqWZcaV1ukVXRJT7/q/1S5YhsIsNLJPRKD5IsOarlHyGHwAgGqhhyspAoEOHxtlMMScnINCvBFhXsJeQfUWo5TNeEWHQggRZpPHhgpuyshhCUDeGtqj55jJuMxv0r0hVOWqUMOs6Yo0PtNo7On3hkEFKYmrIndpbVaFfGmoxfPMd2RRwghCPg+mVwC/5FalTEsu3bOuP9ABetYXVKJd4kkleYvRbj3lw7aFGdWWbcPmyhvL5Mnp+otBHEhXFgGMZxJ52R7IuUvkwhCELD32xPZe7yj62/0Xm4RDmCfu0YxsjlbwzG3Wb9gQWclX8R7pdS93/IIc5Q3qfv5NX4m+T5KNrjczuePF4CptudFvY1tnt0gZbHRmB5SZXgEhv6mCnIYpf4fdUNnBxDgsWiconbGhU6lmz7e3WP7w5idOlVNWnWP7TANRTKLYVocbhz6akVmh7E6MywcUrbDNpuWap9NG6qwpr7BTnCNbKiagICNNu+pk6T378aVqQGNjbRYKsZ+dhpy6NNEOVS9MRGvV25GxjGzN3Q+STS++nY1ZlLWeNrLmL3n/YF6Z/IeaBL+pZHVUsXbNU4npqzsYQUJyA9bYymgMp7Y2nVr6fHZ6RD4+LVB10K+WAp4k07JNbNedFAqz98l5BupPV4QOYwqfHnqO/JrBuJjgkPRaq7Ym9QN/4GAHbanuy3OWoWSb84cknlaFGjpJPBiNfAiO3TZzfUcQvgHMG3nFQ==
+sidebar_class_name: "get api-method"
+info_path: docs/customers-api/reference/store
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Handle Get Order"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/orders/{order_id}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Handle Get Order
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"order_id","in":"path","required":true,"schema":{"type":"integer","title":"Order Id"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Successful Response","content":{"application/json":{"schema":{}}}},"422":{"description":"Validation Error","content":{"application/json":{"schema":{"properties":{"detail":{"items":{"properties":{"loc":{"items":{"anyOf":[{"type":"string"},{"type":"integer"}]},"type":"array","title":"Location"},"msg":{"type":"string","title":"Message"},"type":{"type":"string","title":"Error Type"}},"type":"object","required":["loc","msg","type"],"title":"ValidationError"},"type":"array","title":"Detail"}},"type":"object","title":"HTTPValidationError"}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

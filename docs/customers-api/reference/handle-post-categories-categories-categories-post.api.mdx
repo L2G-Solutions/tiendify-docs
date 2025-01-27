@@ -1,0 +1,71 @@
+---
+id: handle-post-categories-categories-categories-post
+title: "Handle Post Categories"
+description: "Handle Post Categories"
+sidebar_label: "Handle Post Categories"
+hide_title: true
+hide_table_of_contents: true
+api: eJyVVU1v2kAQ/SvWnLcJRT35RkmkRGkbFEgvCEWLPdgb1l5ndxxiIf/3anZNDCTQlouX2ef5eG9mvAWSmYN4DokkzIxV6GAhwFRoJSlT3qYQQy7LVONTZRw99bgTR0aBAIsvNTr6btIG4i0kpiQsiY+yqrRKvPfLZ2dKtrkkx0LyqbIcmzgPtus64yc1FUIMjqwqMxBAijQbpnzfCihlgedwv/i+FZCiS6yqOPY5+NUerG3FDmeWz5jsilMWUybOp9hlcBhg0TscB36asUVJCC077Z2QrdEbXGVKFyofDgb8OEgYpnWSoHOrWkcPHRjEP3Pb+rDfhsOPjn9LrVL/WnRtrbH/4fVIsRRJKs0nRVi4jwBtkoNbWTb3K4jnx2q04t2iSsIMLbSLXgtprWz2JPthQoKscuHONs1PdE5mvh8C5DTUkxHN+PZvfcB1hdAdbk/+nt7A7ukyrgJ9nwXbQW5ms8kHh0HbQ1Fv/NhGE+MoGvfjLaBAyg0PdjerlaQcYrjsp3jvCAIcJrVV1ExZ86DiaHJ7h83YmLXaJ1BW6g65HsUJJOF6N55gcWXR5U9k1uiFmmJikaI1NtEoVUU0qinHkrpe2/NrZE35EASstNmEppLObYxNQy+ayqfFrLHvR6shhi6MZ4bb9qFfSddvsqg09iuml77L9f3/IafvzQmqXBmf4W4VkbFc6ytaF7CDi68XA4YyzYX09XTeT0rz+YIifKPLSkvlWautDgywagebWxyt8Zz1jeew3S6lw0er25bNLzXaBuL5QsCrtEouuYA5D1eOMkXrp3GNDS+usAW++BFguK6Dzkcbgac1vDFKEqzoLHax14KT++kMBCy770RhUt8pcsPjJTcQA/DniN/2unvbFrQss5qHOIbgk39/ADc9Wjc=
+sidebar_class_name: "post api-method"
+info_path: docs/customers-api/reference/store
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Handle Post Categories"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/categories/categories"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Handle Post Categories
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={undefined}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"content":{"application/json":{"schema":{"properties":{"slug":{"type":"string","title":"Slug"},"name":{"type":"string","title":"Name"},"description":{"type":"string","title":"Description"}},"type":"object","required":["slug","name","description"],"title":"CategoryCreate"}}},"required":true}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Successful Response","content":{"application/json":{"schema":{}}}},"422":{"description":"Validation Error","content":{"application/json":{"schema":{"properties":{"detail":{"items":{"properties":{"loc":{"items":{"anyOf":[{"type":"string"},{"type":"integer"}]},"type":"array","title":"Location"},"msg":{"type":"string","title":"Message"},"type":{"type":"string","title":"Error Type"}},"type":"object","required":["loc","msg","type"],"title":"ValidationError"},"type":"array","title":"Detail"}},"type":"object","title":"HTTPValidationError"}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

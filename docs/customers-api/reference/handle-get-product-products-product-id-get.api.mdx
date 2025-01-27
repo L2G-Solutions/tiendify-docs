@@ -1,0 +1,71 @@
+---
+id: handle-get-product-products-product-id-get
+title: "Handle Get Product"
+description: "Handle Get Product"
+sidebar_label: "Handle Get Product"
+hide_title: true
+hide_table_of_contents: true
+api: eJyVVMFu2zAM/RWDpw0QmizYybdgK9qiG1Y06S5BEKg2E6uxLZei2xmG/n2gZccO0h12skw9PT0+kmqB9cFBvIGKbFon7GCrwFZImo0t71KIIdNlmuPugLzrQcPX7U4Rk+4EAQoqTbpARhLaFkpdIMQw4kCBKSWiOQMFhK+1IUwhZqpRgUsyLDTELXBTyUlTMh6QQAEbziXyELiiuxS83wqFq2zp0MmpxXwunxRdQqaSJCCGVZ0k6Ny+zqPHHgwKElsylixwXVW5SbqcZy9OzrSjEu+9V/B1sbgk/q1zk3bHomsiS//BKpZUSGyC7hRZm1xWhrFwl4DcJme7umx+7TuLe6MckykP4NWFdX7r1RDTRLqZmPnDBoHgFRTuMDG+5xuhP9E5fUA4kf0b2pkRrWXXj3fb5xdM+Kzomy6vcHWP2440o73B3X+n8T3Y99FlA+R2vX64IAy1PS/qbdfw0Q1y1LeaCETOrIzD0OWcQQyzYRJm7djhHhQ4TGoy3Kyk3KGAy4e7e2y+WXs0U+90Ze6xGaYiCdtqmBvCPaHLdmyP2NVohQkhR0dsomVqimhZc4Yl92024bW65mwBCva5fQ/9pJ17t5SGNrRVJ0sME+4nyiGG/prOFFPubcfX+7diS6LsDckFo+ZXX67mIqqyjgvd3d7r/tDDM5tPQhn/8KzKtenyqykPWsXfybOkIJ68IVsFmXUsiLZ91g6fKPdewq81UgPxZqvgTZPRz6J900JqnKxTiPc6d3gh5jS28Omx787PEaiPRQ6lK6Vubzqv5Q8UHLE5f+u6yctQp0idigBYJglWPDl68VDIs3bquJvrNXj/F1t78rY=
+sidebar_class_name: "get api-method"
+info_path: docs/customers-api/reference/store
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Handle Get Product"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/products/{product_id}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Handle Get Product
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"product_id","in":"path","required":true,"schema":{"type":"integer","title":"Product Id"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Successful Response","content":{"application/json":{"schema":{}}}},"422":{"description":"Validation Error","content":{"application/json":{"schema":{"properties":{"detail":{"items":{"properties":{"loc":{"items":{"anyOf":[{"type":"string"},{"type":"integer"}]},"type":"array","title":"Location"},"msg":{"type":"string","title":"Message"},"type":{"type":"string","title":"Error Type"}},"type":"object","required":["loc","msg","type"],"title":"ValidationError"},"type":"array","title":"Detail"}},"type":"object","title":"HTTPValidationError"}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

@@ -1,0 +1,71 @@
+---
+id: handle-change-product-visibility-products-product-id-visibility-patch
+title: "Handle Change Product Visibility"
+description: "Handle Change Product Visibility"
+sidebar_label: "Handle Change Product Visibility"
+hide_title: true
+hide_table_of_contents: true
+api: eJyVVU2P2zgM/SsGT7uAtpkd7Mm37LTADNpiB/PRyyAIGIuJ1ZElV6IzNQL/9wUlJ3Em/cwltkQ+ku+R9A4YNxHKJ2iD113FERYKfEsB2Xh3o6GEGp22tKxqdBtajnbLrYlmZazhfn8Ul4dLo5cnBshVDQpaDNgQU5CIO3DYEJRwdAIFxskJspgH+tKZQBpKDh0piFVNDUK5A+5b8TSOaUMBFLBhKye3Gau40TAMiwxBkf/1uhe/14iVd0yO5Qrb1poqVT37HL2Ts2PANggnbCjKW220JjdJZOW9JXSTRK6zyTCovY1ffaaKT8p62iMtzip4bDUyfTpwCMMgWIFi613MaVxeXMifplgF00rmUMJ9V1UU47qzxd1oDL9eaI7yz+XlOfAntEYnt+JdCD78Buor+jQxGitPhqmJ5wbWVye36Pr/1qllRi4jB+M2MKizVhgWR8YxBOwnmnzwOUEYFDRxM9FvxDuafqQYcUNwAPu+aSKjeJDbn6ktdeXQo91E9yO9md3vl/E20/etYIfue3i4PQPM2p6Kep1mu7hKs13sp2fSdgoa4trrPJXjFHMNJcz2Yz/bHSd4mG2nvpGqLhju76UTsrbz25v31F95/2ymtGJr3lO/XwBVvlb7FRFoHSjWS/bPlOS7pyoQF8/UF3NtmmLecU2Oxw6c4HrsuL4EBWvrX3KrYYwvPujcob5NaQmXgv0YLJQwhkl8STPfHbfIu6/YtJamW0BWySCJr30KPGpwzz5ICVsKMZN98ebvNxeSfesjN5jSHAv8BR1OhDvUx/SVZ61Fk2jpgs0likKTna6gPNmyE5EWCmofWcx3uxVGegx2GOT4S0ehh/JpoWCLweBKynragTZRnjWUa7SRzjI7bAX4425s/j8LUN/OeC+/kxK3aDt5AwXP1J9+GtJg14SaQsoiG1zlWH+l8TsCnG0j2RTZY15V1PIPbReTpr+dP1xdg4LV+AVpvE4NiS8y2/iSs/Wp+NRe6WwHFt2mkw1SQgaV3/+3eZRP
+sidebar_class_name: "patch api-method"
+info_path: docs/customers-api/reference/store
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Handle Change Product Visibility"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"patch"}
+  path={"/products/{product_id}/visibility"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Handle Change Product Visibility
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"product_id","in":"path","required":true,"schema":{"type":"integer","title":"Product Id"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"required":true,"content":{"application/json":{"schema":{"properties":{"hidden":{"type":"boolean","title":"Hidden"}},"type":"object","required":["hidden"],"title":"ProductUpdateVisibility"}}}}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Successful Response","content":{"application/json":{"schema":{}}}},"422":{"description":"Validation Error","content":{"application/json":{"schema":{"properties":{"detail":{"items":{"properties":{"loc":{"items":{"anyOf":[{"type":"string"},{"type":"integer"}]},"type":"array","title":"Location"},"msg":{"type":"string","title":"Message"},"type":{"type":"string","title":"Error Type"}},"type":"object","required":["loc","msg","type"],"title":"ValidationError"},"type":"array","title":"Detail"}},"type":"object","title":"HTTPValidationError"}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

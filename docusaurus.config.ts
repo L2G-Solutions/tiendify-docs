@@ -43,19 +43,6 @@ const config: Config = {
           sidebarPath: "./sidebars.ts",
           docItemComponent: "@theme/ApiItem",
         },
-        blog: {
-          showReadingTime: true,
-          feedOptions: {
-            type: ["rss", "atom"],
-            xslt: true,
-          },
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          // Useful options to enforce blogging best practices
-          onInlineTags: "warn",
-          onInlineAuthors: "warn",
-          onUntruncatedBlogPosts: "warn",
-        },
         theme: {
           customCss: "./src/css/custom.css",
         },
@@ -65,14 +52,25 @@ const config: Config = {
 
   plugins: [
     [
+      "@docusaurus/plugin-client-redirects",
+      {
+        redirects: [
+          {
+            to: "/docs/customers-api/reference",
+            from: ["/docs/customers-api/reference/intro"],
+          },
+        ],
+      },
+    ],
+    [
       "docusaurus-plugin-openapi-docs",
       {
         id: "api",
         docsPluginId: "classic",
         config: {
-          petstore: {
-            specPath: "test.openapi.json",
-            outputDir: "docs/tiendify",
+          tiendify: {
+            specPath: "openapi/customers-api.openapi.json",
+            outputDir: "docs/customers-api/reference",
             sidebarOptions: {
               groupPathsBy: "tag",
               categoryLinkSource: "tag",

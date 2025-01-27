@@ -1,0 +1,71 @@
+---
+id: handle-get-orders-orders-get
+title: "Handle Get Orders"
+description: "Handle Get Orders"
+sidebar_label: "Handle Get Orders"
+hide_title: true
+hide_table_of_contents: true
+api: eJytVE1v2zAM/SsGz0KTBTv5FmzFWnRDiyXdpQgK1aZjNbLlUnQ7I9B/Hyg5X0t7GLCTE+nxkXqP5BZYrz3kD+CoRPKwUuA6JM3Gtdcl5FDrtrT4uEZ+TJDdR45AQadJN8gSmz9sodUNQg7WNEZuTQs5vPRIAyggfOkNYQl5pa1HBb6osdGQb4GHTsJMy7hGAgUlVrq3DPlsqoANW7n+HllDUPs8rqo8/p9ER3luE2sIK+HynWs9eomeTafyKdEXZDrRCHJY9EWB3le9zX6OYFBQuJaxZYHrrrOmiJJOnr3EbA8VhRCCgs+z2TnxL21NGcOySyJH/8AKHYmNbFLdJbI2Vn4ZxsafA6wrTm51O9xW0dBRMM9k2jWI9H9JGFZB7c40kRYD9oa5VCAEBY1fHxkw8h2gP9B7vUbYk30MjWJkS7kNh9zu6RkLPnH/Ib4rpR5xqwPNQd6k7sfP+Jrkey/ZDnK1XN6dESZvT029ivOUfUPObtPIKWiQayfDthspriGHSRq0CSjwWPRkeFiIv8mx+d31DQ5fnNuYY7F0Z25w2A1Eka7VblwIK0JfP7LbYDRlgQUhZxscsnlpmmzec40tj311xOt0z/UMFFTWvaUG0t6/OSpT37kuliUKCfc9WchhTBNVMG3lIt8o2IIdSWWvSD4pM734dDGVojrnudEx+1j3e6KdyLqvk/E3TzqrTXxeTzaVKoLud5wCaYPaeZbD7fZJe7wnG4Icpx0inV8ar5/s0RbZ4HC02l617SVjnIkPsPv1dACv5A8ZQUP+ILNToy6RYsoUNS8K7I6jzkZdWPZN8+1yCSH8AdNM93I=
+sidebar_class_name: "get api-method"
+info_path: docs/customers-api/reference/store
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Handle Get Orders"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/orders/"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Handle Get Orders
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"limit","in":"query","required":false,"schema":{"type":"integer","default":20,"title":"Limit"}},{"name":"offset","in":"query","required":false,"schema":{"type":"integer","default":0,"title":"Offset"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Successful Response","content":{"application/json":{"schema":{}}}},"422":{"description":"Validation Error","content":{"application/json":{"schema":{"properties":{"detail":{"items":{"properties":{"loc":{"items":{"anyOf":[{"type":"string"},{"type":"integer"}]},"type":"array","title":"Location"},"msg":{"type":"string","title":"Message"},"type":{"type":"string","title":"Error Type"}},"type":"object","required":["loc","msg","type"],"title":"ValidationError"},"type":"array","title":"Detail"}},"type":"object","title":"HTTPValidationError"}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

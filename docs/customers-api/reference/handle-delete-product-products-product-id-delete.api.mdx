@@ -1,0 +1,71 @@
+---
+id: handle-delete-product-products-product-id-delete
+title: "Handle Delete Product"
+description: "Handle Delete Product"
+sidebar_label: "Handle Delete Product"
+hide_title: true
+hide_table_of_contents: true
+api: eJyVVMFu2zAM/RWDpw0QmizYybdgDdCiHVY06S5BEKgWE6uRLZei2xmG/n2QbCcO0h56skw9PT0+kmqB5d5BuoaKrKozdrARYCskydqWtwpSyGWpDG4VGmTc9rjh67bHiFbbHgQCKkmyQEYK5C2UskBI4QQFAboMEck5CCB8rTWhgpSpRgEuy7GQkLbATRVO6pJxjwQCWLMJkYeOK7lV4P0mULjKlg5dODWbTsNHoctIVyEVSGFZZxk6t6tN8tiDQUBmS8aSA1xWldFZzHzy4sKZ9qTEe+8F/JzNLon/SqNVPJYsiCx9gTVYUiGx7nQrZKlNWGnGwl0CjM3OdmXZ/NlFi3ujHJMu9+DFhXV+48UQk0SyGZl5bzuB4AUUbj8yvuc7QX+jc3KPcCT7HBrNSFZh15/uts8vmPFZ0dcxr+7qHrc50Zzs7dz9PI3rzr6PLhsgN6vVwwVhV9vzot7Etk+uY0cnfbcFjci5DXMx6nXOIYXJMBKT9tTnHgQ4zGrS3CxD0bsyzh9u77D5Ze1Bjx2Ulb7DZpiNrNsWw/QQ7ghdvmV7wFipJWaEnBywSeZKF8m85hxL7pttxGtlzfkMBOyMfe+6Sjr3bkl1zWirKCvYFrifyEAK/TXRGl3ubOTrXVyypaDsDcl1dk2vflxNg6jKOi5kvL3X/ZmTZ34ftTL+40llpI4p1mQ6ucHi0SslIB09JhsBuXUcEG37LB0+kfE+hF9rpAbS9UbAmyQtn4P8dQtKu7BWkO6kcXgh5ji/8O2xb9PvCYiPRQ7VK0Pp3qSpwx8IOGBz/ujFEcxRKqSoogPMswwrHh29eDHC+3bsu+vF/WK1AO//A7AC+Yg=
+sidebar_class_name: "delete api-method"
+info_path: docs/customers-api/reference/store
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Handle Delete Product"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"delete"}
+  path={"/products/{product_id}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Handle Delete Product
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"product_id","in":"path","required":true,"schema":{"type":"integer","title":"Product Id"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Successful Response","content":{"application/json":{"schema":{}}}},"422":{"description":"Validation Error","content":{"application/json":{"schema":{"properties":{"detail":{"items":{"properties":{"loc":{"items":{"anyOf":[{"type":"string"},{"type":"integer"}]},"type":"array","title":"Location"},"msg":{"type":"string","title":"Message"},"type":{"type":"string","title":"Error Type"}},"type":"object","required":["loc","msg","type"],"title":"ValidationError"},"type":"array","title":"Detail"}},"type":"object","title":"HTTPValidationError"}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

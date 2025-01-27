@@ -1,0 +1,71 @@
+---
+id: handle-update-product-products-product-id-put
+title: "Handle Update Product"
+description: "Handle Update Product"
+sidebar_label: "Handle Update Product"
+hide_title: true
+hide_table_of_contents: true
+api: eJyVVU1v2zgQ/SvCnHYBbuMN9qRbNi3QoLttkI+9GIZBi2OLNUWq5CipYOi/L4aULMlO0tYXWeTjfLx5fDoAyV2AfAm1d6opKMBKgKvRS9LO3ijIoZRWGVw3tZKE6x43PMP6uKLVel03BAJq6WWFhJ4jH8DKCiGHEQcCtOUVSSUI8Pit0R4V5OQbFBCKEisJ+QGorfmktoQ79CCANBleuU2xshsFXbdKITDQ3061fO40YuEsoSXeknVtdBG7u/ganOW1MWHtuXfSGPgtFX4sI5DXdjep4jPvdwJqr4sp0DbV5qRcBnQCFIbC65qzvxX4/QTWCQjkiv2bfNxHRCegkIQ75/sGNGEVzhN1YliQ3st2Eud6PN4JKLVSOC1045xBaScHPiYId7aVjSHIt9IE7MYUbvMVC5qNeZmYHYib0zK0O+tldTb6a4+SELqOU3kMtbMhNX25WPBjRjXcN0WBIWwbk931YPh5XaQsf11engf+Txqt4rHsg/fO/0LUE7UpJKnNbGxzgHHFbFfa9ss23rDT8Z4ppVu9PvN/XCqQJ16F3Vu6/BdDkDscBfQ6NJKRPfDuj8TAfaXUPW4y7ZHexO7rbbxP9L2U7CjWh4fbs4BptvOhfoyWlz1Gy8t6xXGNSKVjTxx8jkrI4WLwwovD6HEdCxmLxmtq73niaYZXtzefsL12bq+n9Mlaf8J28MUibYvBOT1uPYZyTW6PcUz3WHikbI9tdqV0lV01VKKlXmmTuE42VF6CgK1xz0lSMoRn51VSoqtjWcwZx370BnLo00ReWLR3o7l++C6r2uBojuPgexNcnHJ5BPQutpib1HIArEa/SRbCZGxdbGZ0Oc+0PKEPKfji3Z/vFtGCXaBK2klhr83wZQsm/E4XtZE68tt4k7ji+U6+jQLyyVeMK3aBGHE4bGTAR2+6jpe/NehbyJcrAU/Sa7nh8pcHUDrwf9W3eFbM0Tngt7v+gvyegXi5yEE6lnXzJE3DbyBgj+38axsvf4lSoY9VJMB1yvVHvKJjgDPHYjdJJ66KAmt6E7ua3JHbxwcQsOk/yZVTUcrymW+/fE61uth6FGZcO4CRdtewx+SQQvLvf/FQ+Uo=
+sidebar_class_name: "put api-method"
+info_path: docs/customers-api/reference/store
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Handle Update Product"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"put"}
+  path={"/products/{product_id}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Handle Update Product
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"product_id","in":"path","required":true,"schema":{"type":"integer","title":"Product Id"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"required":true,"content":{"application/json":{"schema":{"properties":{"name":{"type":"string","title":"Name"},"price":{"type":"number","title":"Price"},"description":{"type":"string","title":"Description"},"stock":{"type":"integer","title":"Stock"},"categories":{"items":{"type":"string"},"type":"array","title":"Categories"},"hidden":{"type":"boolean","title":"Hidden","default":false}},"type":"object","required":["name","price","description","stock","categories"],"title":"ProductCreate"}}}}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Successful Response","content":{"application/json":{"schema":{}}}},"422":{"description":"Validation Error","content":{"application/json":{"schema":{"properties":{"detail":{"items":{"properties":{"loc":{"items":{"anyOf":[{"type":"string"},{"type":"integer"}]},"type":"array","title":"Location"},"msg":{"type":"string","title":"Message"},"type":{"type":"string","title":"Error Type"}},"type":"object","required":["loc","msg","type"],"title":"ValidationError"},"type":"array","title":"Detail"}},"type":"object","title":"HTTPValidationError"}}}}}}
+>
+  
+</StatusCodes>
+
+
+      
