@@ -1,13 +1,13 @@
 ---
-id: handle-delete-category-categories-categories-category-slug-delete
-title: "Handle Delete Category"
-description: "Handle Delete Category"
-sidebar_label: "Handle Delete Category"
+id: handle-get-product-products-product-id-get
+title: "Handle Get Product"
+description: "Handle Get Product"
+sidebar_label: "Handle Get Product"
 hide_title: true
 hide_table_of_contents: true
-api: eJyVVE1v2zAM/SsGTxsgtFmwk29BG6BFO6xo0l2CIFBtJlajWC5FtzMM/feBsvNhpC2wk2WJfHx8/GiB9cZDuoBMM24cGfSwVOAqJM3Glbc5pFDoMre4ytEi46q3bFZHl9Pj8d3berPqvUBBpUnvkJEkXgul3iGkMLAGBaaEFCrNBSggfK0NYQ4pU40KfFbgTkPaAjeVOHsmU4oXG7ZycdWjJTNBC2EpIL5ypUcvfuPRSD45+oxMJQlCCrM6y9D7dW2Tx94YFGSuZCxZzHVVWZNFPS5fvPi0Ry4hhKDg53h8DvxHW5NHt2RK5Og/UKEiqQGbjneOrI2Vk2Hc+XMD67LBqy6b3+uo81CqoA43pmTcIEFYBrW/00S6OdHz3nUEISjY+c1X0v9C7/UG4QD2uWkUI5nLazjGds8vmPGg7IuYVxe6t1seYY7ydup+nsZ1J99HwfYmN/P5wxlgV9thUW/iMCTXsa2TfcMJSeTCybicdDwXkMLlcTpOj+2g9QMo8JjVZLiZSRd0dZ083N5hc+Xc1pxKqitzh81+XLLuWe1ninBN6IsVuy3G0s0wI+Rki00yyc0umdRcYMl9953gOl1zMQYFa+veuzbT3r87yrvudFWkJToK9hNZSKEPE7Uy5dpFvF7WGTsSZm9IvtNvdPHjYiSkKud5p2P0nven0g4qcCDL+JcvK6tNzLEm2/EVzQf7TA1/0uHKWSoonGfxadtn7fGJbAhy/VojNZAulgreNBn9LBktWsiNl3MO6Vpbj2f0DjMO3x77Vv6egPqY9r6gpeT5pm0tf6Bgi83ZdoyTWqDOkSKRzmaSZVjxiffZYpE1eOjO6+n9dD6FEP4BhOcSUQ==
-sidebar_class_name: "delete api-method"
-info_path: docs/customers-api/reference/store
+api: eJyVVMFu2zAM/RWDpw0QmizYybdgK9qiG1Y06S5BEKg2E6uxLZei2xmG/n2gZccO0h12skw9PT0+kmqB9cFBvIGKbFon7GCrwFZImo0t71KIIdNlmuPugLzrQcPX7U4Rk+4EAQoqTbpARhLaFkpdIMQw4kCBKSWiOQMFhK+1IUwhZqpRgUsyLDTELXBTyUlTMh6QQAEbziXyELiiuxS83wqFq2zp0MmpxXwunxRdQqaSJCCGVZ0k6Ny+zqPHHgwKElsylixwXVW5SbqcZy9OzrSjEu+9V/B1sbgk/q1zk3bHomsiS//BKpZUSGyC7hRZm1xWhrFwl4DcJme7umx+7TuLe6MckykP4NWFdX7r1RDTRLqZmPnDBoHgFRTuMDG+5xuhP9E5fUA4kf0b2pkRrWXXj3fb5xdM+Kzomy6vcHWP2440o73B3X+n8T3Y99FlA+R2vX64IAy1PS/qbdfw0Q1y1LeaCETOrIzD0OWcQQyzYRJm7djhHhQ4TGoy3Kyk3KGAy4e7e2y+WXs0U+90Ze6xGaYiCdtqmBvCPaHLdmyP2NVohQkhR0dsomVqimhZc4Yl92024bW65mwBCva5fQ/9pJ17t5SGNrRVJ0sME+4nyiGG/prOFFPubcfX+7diS6LsDckFo+ZXX67mIqqyjgvd3d7r/tDDM5tPQhn/8KzKtenyqykPWsXfybOkIJ68IVsFmXUsiLZ91g6fKPdewq81UgPxZqvgTZPRz6J900JqnKxTiPc6d3gh5jS28Omx787PEaiPRQ6lK6Vubzqv5Q8UHLE5f+u6yctQp0idigBYJglWPDl68VDIs3bquJvrNXj/F1t78rY=
+sidebar_class_name: "get api-method"
+info_path: docs/store-api/reference/store
 custom_edit_url: null
 ---
 
@@ -22,13 +22,13 @@ import Heading from "@theme/Heading";
 <Heading
   as={"h1"}
   className={"openapi__heading"}
-  children={"Handle Delete Category"}
+  children={"Handle Get Product"}
 >
 </Heading>
 
 <MethodEndpoint
-  method={"delete"}
-  path={"/categories/categories/{category_slug}"}
+  method={"get"}
+  path={"/products/{product_id}"}
   context={"endpoint"}
 >
   
@@ -36,7 +36,7 @@ import Heading from "@theme/Heading";
 
 
 
-Handle Delete Category
+Handle Get Product
 
 <Heading
   id={"request"}
@@ -47,7 +47,7 @@ Handle Delete Category
 </Heading>
 
 <ParamsDetails
-  parameters={[{"name":"category_slug","in":"path","required":true,"schema":{"type":"string","title":"Category Slug"}}]}
+  parameters={[{"name":"product_id","in":"path","required":true,"schema":{"type":"integer","title":"Product Id"}}]}
 >
   
 </ParamsDetails>

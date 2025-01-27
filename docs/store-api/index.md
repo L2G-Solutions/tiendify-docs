@@ -1,6 +1,6 @@
-# Customers API
+# Store API
 
-The Customers API describes the services your customers will be interacting with. So, these are the endpoints you will integrate in your custom frontend website.
+The Store API describes the services your customers will be interacting with. So, these are the endpoints you will integrate in your custom frontend website.
 
 ## Getting Started
 

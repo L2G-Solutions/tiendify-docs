@@ -107,6 +107,6 @@
   border-color: var(--ifm-color-secondary-dark);
 }
 
-.menu__link[href="/docs/customers-api/reference/"] + .menu__caret {
+.menu__link[href="/docs/store-api/reference/"] + .menu__caret {
   display: none;
 }

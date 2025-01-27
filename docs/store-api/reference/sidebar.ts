@@ -4,33 +4,33 @@ const sidebar: SidebarsConfig = {
   apisidebar: [
     {
       type: "doc",
-      id: "customers-api/reference/store",
+      id: "store-api/reference/store",
     },
     {
       type: "category",
-      label: "Auth",
+      label: "auth",
       items: [
         {
           type: "doc",
-          id: "customers-api/reference/redirect-to-keycloak-auth-public-login-get",
+          id: "store-api/reference/redirect-to-keycloak-auth-public-login-get",
           label: "Redirect to Keycloak login page",
           className: "api-method get",
         },
         {
           type: "doc",
-          id: "customers-api/reference/authorize-auth-public-authorize-post",
+          id: "store-api/reference/authorize-auth-public-authorize-post",
           label: "Takes the authorization code and set the access token",
           className: "api-method post",
         },
         {
           type: "doc",
-          id: "customers-api/reference/get-logged-user-auth-private-me-get",
+          id: "store-api/reference/get-logged-user-auth-private-me-get",
           label: "Get current user information",
           className: "api-method get",
         },
         {
           type: "doc",
-          id: "customers-api/reference/logout-auth-private-logout-post",
+          id: "store-api/reference/logout-auth-private-logout-post",
           label: "Logout user",
           className: "api-method post",
         },
@@ -38,17 +38,17 @@ const sidebar: SidebarsConfig = {
     },
     {
       type: "category",
-      label: "Secret Keys",
+      label: "secret keys",
       items: [
         {
           type: "doc",
-          id: "customers-api/reference/get-secret-keys-auth-private-secret-keys-get",
+          id: "store-api/reference/get-secret-keys-auth-private-secret-keys-get",
           label: "Get all secret keys",
           className: "api-method get",
         },
         {
           type: "doc",
-          id: "customers-api/reference/create-secret-key-auth-private-secret-keys-post",
+          id: "store-api/reference/create-secret-key-auth-private-secret-keys-post",
           label: "Create a new secret key",
           className: "api-method post",
         },
@@ -56,23 +56,23 @@ const sidebar: SidebarsConfig = {
     },
     {
       type: "category",
-      label: "Categories",
+      label: "categories",
       items: [
         {
           type: "doc",
-          id: "customers-api/reference/handle-get-categories-categories-categories-get",
+          id: "store-api/reference/handle-get-categories-categories-categories-get",
           label: "Handle Get Categories",
           className: "api-method get",
         },
         {
           type: "doc",
-          id: "customers-api/reference/handle-post-categories-categories-categories-post",
+          id: "store-api/reference/handle-post-categories-categories-categories-post",
           label: "Handle Post Categories",
           className: "api-method post",
         },
         {
           type: "doc",
-          id: "customers-api/reference/handle-delete-category-categories-categories-category-slug-delete",
+          id: "store-api/reference/handle-delete-category-categories-categories-category-slug-delete",
           label: "Handle Delete Category",
           className: "api-method delete",
         },
@@ -80,47 +80,47 @@ const sidebar: SidebarsConfig = {
     },
     {
       type: "category",
-      label: "Products",
+      label: "products",
       items: [
         {
           type: "doc",
-          id: "customers-api/reference/handle-get-products-products-get",
+          id: "store-api/reference/handle-get-products-products-get",
           label: "Handle Get Products",
           className: "api-method get",
         },
         {
           type: "doc",
-          id: "customers-api/reference/handle-create-product-products-post",
+          id: "store-api/reference/handle-create-product-products-post",
           label: "Handle Create Product",
           className: "api-method post",
         },
         {
           type: "doc",
-          id: "customers-api/reference/handle-get-product-products-product-id-get",
+          id: "store-api/reference/handle-get-product-products-product-id-get",
           label: "Handle Get Product",
           className: "api-method get",
         },
         {
           type: "doc",
-          id: "customers-api/reference/handle-update-product-products-product-id-put",
+          id: "store-api/reference/handle-update-product-products-product-id-put",
           label: "Handle Update Product",
           className: "api-method put",
         },
         {
           type: "doc",
-          id: "customers-api/reference/handle-delete-product-products-product-id-delete",
+          id: "store-api/reference/handle-delete-product-products-product-id-delete",
           label: "Handle Delete Product",
           className: "api-method delete",
         },
         {
           type: "doc",
-          id: "customers-api/reference/handle-create-product-mediafile-products-product-id-mediafile-post",
+          id: "store-api/reference/handle-create-product-mediafile-products-product-id-mediafile-post",
           label: "Handle Create Product Mediafile",
           className: "api-method post",
         },
         {
           type: "doc",
-          id: "customers-api/reference/handle-change-product-visibility-products-product-id-visibility-patch",
+          id: "store-api/reference/handle-change-product-visibility-products-product-id-visibility-patch",
           label: "Handle Change Product Visibility",
           className: "api-method patch",
         },
@@ -128,23 +128,23 @@ const sidebar: SidebarsConfig = {
     },
     {
       type: "category",
-      label: "Orders",
+      label: "orders",
       items: [
         {
           type: "doc",
-          id: "customers-api/reference/handle-get-orders-orders-get",
+          id: "store-api/reference/handle-get-orders-orders-get",
           label: "Handle Get Orders",
           className: "api-method get",
         },
         {
           type: "doc",
-          id: "customers-api/reference/handle-get-order-orders-order-id-get",
+          id: "store-api/reference/handle-get-order-orders-order-id-get",
           label: "Handle Get Order",
           className: "api-method get",
         },
         {
           type: "doc",
-          id: "customers-api/reference/handle-cancel-order-orders-order-id-cancel-patch",
+          id: "store-api/reference/handle-cancel-order-orders-order-id-cancel-patch",
           label: "Handle Cancel Order",
           className: "api-method patch",
         },
@@ -152,11 +152,11 @@ const sidebar: SidebarsConfig = {
     },
     {
       type: "category",
-      label: "Customers",
+      label: "customers",
       items: [
         {
           type: "doc",
-          id: "customers-api/reference/handle-get-customers-customers-get",
+          id: "store-api/reference/handle-get-customers-customers-get",
           label: "Handle Get Customers",
           className: "api-method get",
         },
@@ -164,11 +164,11 @@ const sidebar: SidebarsConfig = {
     },
     {
       type: "category",
-      label: "Other",
+      label: "UNTAGGED",
       items: [
         {
           type: "doc",
-          id: "customers-api/reference/handle-get-health-health-get",
+          id: "store-api/reference/handle-get-health-health-get",
           label: "Handle Get Health",
           className: "api-method get",
         },

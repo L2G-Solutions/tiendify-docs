@@ -1,13 +1,13 @@
 ---
-id: handle-get-products-products-get
-title: "Handle Get Products"
-description: "Handle Get Products"
-sidebar_label: "Handle Get Products"
+id: handle-get-orders-orders-get
+title: "Handle Get Orders"
+description: "Handle Get Orders"
+sidebar_label: "Handle Get Orders"
 hide_title: true
 hide_table_of_contents: true
-api: eJytVE1P4zAQ/SvRnC3arfaUW7WLAMEKtJS9oAoZZ9KYOnGwJ7BR5f++GrtpUwqrRdpTU/vNe+M3HxsgufKQ30PrbNEp8rAUYFt0krRtLgrIoZJNYfBhhfQwgPYffAwCWulkjYSOuTbQyBohB6Nrzbe6gRyeO3Q9CHD43GmHBeSlNB4FeFVhLSHfAPUth+mGcIUOBBRYys4Q5LOpANJk+PoqsoYgdjq2LD3+H6GRznViHQt5lE5Vnxfy5HSzgj33bSIKYcnhvrWNR88Bs+mUfwr0yumWa8DoTin0vuxM9nMLBgHKNoQNMVy2rdEqlmzy5Dlms08ihBAEfJ3Njol/SaOLGJadOmfdJ1i5YVp0pFPeBZLUhr80Ye2PAcaqg1vZ9NdlbJZDj9jtN+UJyyCGM+mc7EdGXtmUIAQBtV/9zfMf6L1cIezIPoZGM7IF34a9tn18QkUHBb+P70rSW9xyT7O3N7n78TO+J/veExsg54vFzRFhqu1hUc/jvGZnSNnNMNQCaqTK8jgPA0sV5DAZBnkCAjyqzmnqb7nGqWrzm4tL7L9Zu9Zjw2SrL7Ef5kClazFMicPSoa8eyK4xFuYWlUPK1thn80LX2byjChva9taI18qOqhkIKI19TU0kvX+1rki9Z9uYFrvE3HfOQA5bmeiEbkob+YY5I+s4sxd0PrkzPflyMuWkWuupllF9m/f7xh2Yu8uU8DdNWiN1fGDnTEqWTR3tUgHcDpX1xMebzaP0eOdMCHyc1gdPQKG9fDSjBbLGfrQ+X6TpWDPOxgfY3Qr8F/Buje3BS/7jNKMhv+eBq1AW6GJ+KWquFLZjiaP9wCy7Pjs7XUAIfwBcHisD
+api: eJytVE1v2zAM/SsGz0KTBTv5FmzFWnRDiyXdpQgK1aZjNbLlUnQ7I9B/Hyg5X0t7GLCTE+nxkXqP5BZYrz3kD+CoRPKwUuA6JM3Gtdcl5FDrtrT4uEZ+TJDdR45AQadJN8gSmz9sodUNQg7WNEZuTQs5vPRIAyggfOkNYQl5pa1HBb6osdGQb4GHTsJMy7hGAgUlVrq3DPlsqoANW7n+HllDUPs8rqo8/p9ER3luE2sIK+HynWs9eomeTafyKdEXZDrRCHJY9EWB3le9zX6OYFBQuJaxZYHrrrOmiJJOnr3EbA8VhRCCgs+z2TnxL21NGcOySyJH/8AKHYmNbFLdJbI2Vn4ZxsafA6wrTm51O9xW0dBRMM9k2jWI9H9JGFZB7c40kRYD9oa5VCAEBY1fHxkw8h2gP9B7vUbYk30MjWJkS7kNh9zu6RkLPnH/Ib4rpR5xqwPNQd6k7sfP+Jrkey/ZDnK1XN6dESZvT029ivOUfUPObtPIKWiQayfDthspriGHSRq0CSjwWPRkeFiIv8mx+d31DQ5fnNuYY7F0Z25w2A1Eka7VblwIK0JfP7LbYDRlgQUhZxscsnlpmmzec40tj311xOt0z/UMFFTWvaUG0t6/OSpT37kuliUKCfc9WchhTBNVMG3lIt8o2IIdSWWvSD4pM734dDGVojrnudEx+1j3e6KdyLqvk/E3TzqrTXxeTzaVKoLud5wCaYPaeZbD7fZJe7wnG4Icpx0inV8ar5/s0RbZ4HC02l617SVjnIkPsPv1dACv5A8ZQUP+ILNToy6RYsoUNS8K7I6jzkZdWPZN8+1yCSH8AdNM93I=
 sidebar_class_name: "get api-method"
-info_path: docs/customers-api/reference/store
+info_path: docs/store-api/reference/store
 custom_edit_url: null
 ---
 
@@ -22,13 +22,13 @@ import Heading from "@theme/Heading";
 <Heading
   as={"h1"}
   className={"openapi__heading"}
-  children={"Handle Get Products"}
+  children={"Handle Get Orders"}
 >
 </Heading>
 
 <MethodEndpoint
   method={"get"}
-  path={"/products/"}
+  path={"/orders/"}
   context={"endpoint"}
 >
   
@@ -36,7 +36,7 @@ import Heading from "@theme/Heading";
 
 
 
-Handle Get Products
+Handle Get Orders
 
 <Heading
   id={"request"}
@@ -47,7 +47,7 @@ Handle Get Products
 </Heading>
 
 <ParamsDetails
-  parameters={[{"name":"limit","in":"query","required":false,"schema":{"type":"integer","default":20,"title":"Limit"}},{"name":"offset","in":"query","required":false,"schema":{"type":"integer","default":0,"title":"Offset"}},{"name":"search","in":"query","required":false,"schema":{"type":"string","title":"Search"}}]}
+  parameters={[{"name":"limit","in":"query","required":false,"schema":{"type":"integer","default":20,"title":"Limit"}},{"name":"offset","in":"query","required":false,"schema":{"type":"integer","default":0,"title":"Offset"}}]}
 >
   
 </ParamsDetails>

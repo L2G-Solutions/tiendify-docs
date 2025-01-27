@@ -56,8 +56,8 @@ const config: Config = {
       {
         redirects: [
           {
-            to: "/docs/customers-api/reference",
-            from: ["/docs/customers-api/reference/intro"],
+            to: "/docs/store-api/reference",
+            from: ["/docs/store-api/reference/intro"],
           },
         ],
       },
@@ -69,8 +69,8 @@ const config: Config = {
         docsPluginId: "classic",
         config: {
           tiendify: {
-            specPath: "openapi/customers-api.openapi.json",
-            outputDir: "docs/customers-api/reference",
+            specPath: "openapi/store-api.openapi.json",
+            outputDir: "docs/store-api/reference",
             sidebarOptions: {
               groupPathsBy: "tag",
               categoryLinkSource: "tag",
