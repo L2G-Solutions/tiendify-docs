@@ -43,7 +43,7 @@ Session cookies are marked as `HttpOnly`, this means they are not accesible thro
 
 :::warning
 
-When calling the [Authorize Login endpoint](/docs/tiendify/authorize-auth-public-authorize-post), you must allow the use of credentials (cookies). For example, when using Axios as HTTP client, make sure you set `withCredentials` option to `true`.
+For these cookies to be sent by the browser, you must allow the use of credentials (cookies). For example, when using Axios as HTTP client, make sure you set `withCredentials` option to `true`.
 
 :::
 
